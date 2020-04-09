@@ -1,9 +1,9 @@
 {
   "name": "tags",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "build/proxy/react.js",
   "scripts": {
-    "build": "plutt build",
+    "build": "plutt build/tags",
     "start": "plutt serve build -p $PORT",
     "postinstall": "plutt build"
   },
@@ -13,6 +13,6 @@
     "react-dom": "^16.13.1"
   },
   "plutt": {
-    "hostPath": "http://localhost:5000"
+    "hostPath": "https://realworld-plutt-microapp-tags.herokuapp.com"
   }
 }
