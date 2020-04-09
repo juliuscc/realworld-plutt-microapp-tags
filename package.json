@@ -4,7 +4,7 @@
   "main": "build/proxy/react.js",
   "scripts": {
     "build": "plutt build",
-    "serve": "plutt serve build/tags -p 5000",
+    "start": "plutt serve build/tags -p 5000",
     "postinstall": "plutt build"
   },
   "dependencies": {
