@@ -1,0 +1,17 @@
+{
+  "name": "tags",
+  "version": "1.0.0",
+  "main": "build/proxy/react.js",
+  "scripts": {
+    "build": "plutt build",
+    "serve": "plutt serve build/tags -p 5000"
+  },
+  "dependencies": {
+    "@digitalroute/plutt": "^2.0.0-beta.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "plutt": {
+    "hostPath": "http://localhost:5000"
+  }
+}
