@@ -10,7 +10,14 @@ const Tags = ({ tags, onClick }) => {
       {tags.map((tag) => {
         return (
           <a key={tag} href={`/?tag=${tag}`} className="tag-default tag-pill">
-            <span onClick={() => onClick(tag)}>{tag}</span>
+            <span
+              onClick={(e) => {
+                e.preventDefault();
+                onClick(tag);
+              }}
+            >
+              {tag}
+            </span>
           </a>
         );
       })}
