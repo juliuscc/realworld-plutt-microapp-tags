@@ -2,7 +2,7 @@ import React from "react";
 
 import LoadingSpinner from "./LoadingSpinner";
 
-const Tags = ({ tags, setPage }) => {
+const Tags = ({ tags, onClick }) => {
   if (!tags) return <LoadingSpinner />;
 
   return (
@@ -10,7 +10,7 @@ const Tags = ({ tags, setPage }) => {
       {tags.map((tag) => {
         return (
           <a key={tag} href={`/?tag=${tag}`} className="tag-default tag-pill">
-            <span onClick={() => setPage(0)}>{tag}</span>
+            <span onClick={() => onClick(tag)}>{tag}</span>
           </a>
         );
       })}
