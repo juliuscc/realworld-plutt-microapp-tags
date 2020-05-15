@@ -1,6 +1,3 @@
-// eslint-disable-file
-import React from "react";
-
 import LoadingSpinner from "./LoadingSpinner";
 
 const Tags = ({ tags, onClick }) => {
