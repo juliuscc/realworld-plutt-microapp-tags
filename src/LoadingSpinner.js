@@ -1,3 +1,4 @@
+// eslint-disable-file
 import React from "react";
 
 const LoadingSpinner = () => (
