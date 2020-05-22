@@ -15,17 +15,11 @@ const Tags = ({ tags, onClick }) => {
             href={`/?tag=${tag}`}
             onClick={(e) => {
               e.preventDefault();
+              onClick(tag);
             }}
             className="tag-default tag-pill"
           >
-            <span
-              onClick={(e) => {
-                e.preventDefault();
-                onClick(tag);
-              }}
-            >
-              {tag}
-            </span>
+            {tag}
           </a>
         );
       })}
